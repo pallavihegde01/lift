@@ -8,8 +8,13 @@ simulate.addEventListener('click', (e)=> {
     if(floorinput=="" || liftinput==""){
         alert('please enter the value')
     }
-    else if(floorinput>=10){
-        alert('maximum number 9 floors')
+    if(floorinput<=1 || liftinput<1){
+        alert('please enter appropriate value')
+    }
+    if(floorinput>=10){
+        alert('maximum 9 floors')}
+    else if(liftinput>=7){
+        alert('maximum 6 lifts')
     }
         else if (window.innerWidth <= 500 && +liftinput > 4) {
             alert("This screen size can't have more than 4 lifts");
@@ -17,8 +22,8 @@ simulate.addEventListener('click', (e)=> {
         else if (window.innerWidth > 500 && window.innerWidth <= 768 && +liftinput > 5) {
             alert("This screen size can't have more than 5 lifts");
         }
-        else if (window.innerWidth > 500 && window.innerWidth <= 1024 && +liftinput > 7) {
-            alert("This screen size can't have more than 7 lifts");
+        else if (window.innerWidth > 500 && window.innerWidth <= 1024 && +liftinput > 6) {
+            alert("This screen size can't have more than 6 lifts");
         }
         else{
             document.querySelector('.page1-container').style.display = 'none';
@@ -29,6 +34,7 @@ simulate.addEventListener('click', (e)=> {
     function hidepage2() {
         document.querySelector('.page2').style.display = 'none';
         document.querySelector('.page1-container').style.display ='block'
+        removingfloors();
     } 
     function creatingfloors(){
         let floorin = document.querySelector('#floornum').value;
@@ -56,11 +62,12 @@ simulate.addEventListener('click', (e)=> {
             floors.className = 'floors';
             let hr = document.createElement('hr');
             let spanfloorno = document.createElement('span');
+            spanfloorno.setAttribute('id',`floor${i}`) 
             spanfloorno.innerText = `Floor ${i}`;
             floors.appendChild(hr);
             floors.appendChild(spanfloorno);
             box.appendChild(floors);
-            document.querySelector('.page2').appendChild(box);
+            document.querySelector('.apart').appendChild(box);
             if(i==floorin){
                 button1.style.display ='none';
             }
@@ -156,4 +163,12 @@ function gateopenclose(liftno) {
         gates.children[0].style.width = '50px';
         // gates.children[1].style.width = '25px';
     }, 3000)
+}
+function removingfloors() {
+    let floorin = document.querySelector('#floornum').value;
+
+    for (let i = floorin; i > 0; i--) {
+        let box = document.querySelector('.box');
+        box.remove();
+    }
 }

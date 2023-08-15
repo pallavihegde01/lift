@@ -63,7 +63,7 @@ h1{
     border-radius: 15px;
     background-color: white; 
     text-align: center;
-    /* margin-left: 450px; */
+    margin-left: 70px;
 }
 .backtopage1:hover{
     background-color: black;
@@ -86,11 +86,12 @@ h1{
     transition: var(--base-transition);
 }
 .apart{
-    margin:auto;
-    width: 400px;
-    height: 600px;
+    margin:50px;
+    width: auto;
+    height: auto;
+    background-color:#757575;
     border: 2px solid black;
-    box-shadow: 10px 10px 10px 10px black
+    box-shadow: 20px 20px 20px 20px black
 }
 .buttons{
     display: flex;
@@ -130,7 +131,7 @@ h1{
 hr{
     flex-grow: 4;
     height: 0px;
-    border-top: 4px solid maroon;
+    border-top: 4px solid black;
 }
 .mainLift{
     display: flex;
@@ -143,7 +144,8 @@ hr{
     border: 2px solid black;
     margin-right: 5px;
     transition-property:transform;
-    background-color: cadetblue;
+    background-color:#393e41
+    ;
     transition-timing-function:ease-in;
     /* transform: translate3d(50px,50px,0); */
 }
@@ -156,8 +158,8 @@ hr{
     width: 50px;
     height: 75px;
     margin: 1px;
-    background-color: darkslategray;
-    transition: width 2.5s ease-in-out;
+    background-color:#D8D8D8;
+    transition: width 1.5s ease-in-out;
 }
 /* .gate2{
     width: 25px;
