@@ -1,0 +1,178 @@
+h1{
+    text-align: center;
+    margin-top:200px;
+    font-size:50px;
+}
+.inputfloor{
+    font-size: 25px;
+    margin-left:580px ;
+}
+.inputfloor #floornum{
+    margin: 15px;
+}
+#floornum{
+    border-radius: 15px;
+    height: 30px;
+    width:150px ;
+    font-size: auto;
+}
+.inputlift{
+    font-size: 25px;
+    margin-left:580px ;
+}
+.inputlift #liftnum{
+    margin: 15px;
+}
+#liftnum{
+    border-radius: 15px;
+    height: 30px;
+    width:150px ;
+    font-size: auto;
+}
+.simulatebtn{
+    border-radius: 15px;
+    margin-left: 735px;
+    margin-top: 25px;
+    height: 30px;
+    cursor: pointer;
+    transition: var(--base-transition);
+}
+/* .resetbtn{
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 25px;
+    height: 30px;
+} */
+.simulatebtn:hover{
+    background-color: black;
+    color: white;
+}
+/* .resetbtn:hover{
+    background-color: black;
+    color: white; */
+/* } */
+.contain{
+    background-image: url(https://img.freepik.com/premium-vector/tablet-computer-isolated-illustration_118339-249.jpg);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position-x: 395px;
+    background-position-y:115px;
+}
+.backtopage1{
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: white; 
+    text-align: center;
+    /* margin-left: 450px; */
+}
+.backtopage1:hover{
+    background-color: black;
+    color: white;
+}
+@media (width>600px){
+    .lift{
+        margin-right: 55px;
+    }
+    .mainLift{
+        margin-left: 50px;
+    }
+}
+.page2{
+    display:none;
+    /* margin: 4% auto; */
+}
+.page1-container{
+    /* height: 100vh; */
+    transition: var(--base-transition);
+}
+.apart{
+    margin:auto;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px 10px black
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 70px;
+    margin: 10px 10px;
+}
+.buttons button{
+    margin: 5px;
+}
+.up{
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: white; 
+    text-align: center;
+}
+.down{
+    font-size: 13px;
+    border-radius: 4px;
+    background-color: white; 
+    text-align: center;
+}
+.up:hover{
+    background-color: black;
+    color: white;
+}
+.down:hover{
+    background-color: black;
+    color: white;
+}
+.floors{
+    display:flex;
+    flex-direction: row;
+    margin: 5px;
+}
+hr{
+    flex-grow: 4;
+    height: 0px;
+    border-top: 4px solid maroon;
+}
+.mainLift{
+    display: flex;
+    margin-left: 10px;
+}
+.lift{
+    width: 50px;
+    height: 75px;
+    margin-left: 120px;
+    border: 2px solid black;
+    margin-right: 5px;
+    transition-property:transform;
+    background-color: cadetblue;
+    transition-timing-function:ease-in;
+    /* transform: translate3d(50px,50px,0); */
+}
+
+.gates{
+    display: flex;
+
+}
+.gate1{
+    width: 50px;
+    height: 75px;
+    margin: 1px;
+    background-color: darkslategray;
+    transition: width 2.5s ease-in-out;
+}
+/* .gate2{
+    width: 25px;
+    height: 75px;
+    margin: 1px;
+    background-color:darkslategray;
+    transition: width 2.5s ease-in-out;
+} */
+.gate1-move{
+    transform: translateX(-100%);
+}
+
+.gate2-move{
+    transform: translateX(100%);
+}
+.btnlift{
+    display: flex;
+}
