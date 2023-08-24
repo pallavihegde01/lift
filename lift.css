@@ -1,11 +1,23 @@
 h1{
-    margin-left:610px ;
-    margin-top:200px;
+    /* margin-left:610px ;
+    margin-top:200px; */
     font-size:50px;
+    padding: 15px;
+}
+.page1-container{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWi_tuUrr-8vD0KIcO6UuXMkgTgt8peqaOS8t1zvNnYdDH4Q4EQf8Yiu1oVqzKWTWbJXs&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 .inputfloor{
     font-size: 25px;
-    margin-left:580px ;
+    padding: 5px;
+    /* margin-left:580px ; */
 }
 .inputfloor #floornum{
     margin: 15px;
@@ -18,7 +30,8 @@ h1{
 }
 .inputlift{
     font-size: 25px;
-    margin-left:580px ;
+    padding: 5px;
+    /* margin-left:580px ; */
 }
 .inputlift #liftnum{
     margin: 15px;
@@ -29,10 +42,14 @@ h1{
     width:150px ;
     font-size: auto;
 }
+.page1btn{
+    padding: 5px;
+}
 .simulatebtn{
     border-radius: 15px;
-    margin-left: 735px;
+    /* margin-left: 735px; */
     margin-top: 25px;
+    margin-bottom: 25px;
     height: 30px;
     cursor: pointer;
     transition: var(--base-transition);
@@ -51,12 +68,16 @@ h1{
     background-color: black;
     color: white; */
 /* } */
-.contain{
+/* .contain{
     background-image: url(https://img.freepik.com/premium-vector/tablet-computer-isolated-illustration_118339-249.jpg);
     background-repeat: no-repeat;
     background-size: 750px;
     background-position-x: 395px;
     background-position-y:115px;
+} */
+.contain{
+    margin-left: 400px;
+    margin-right: 400px;
 }
 .backtopage1{
     font-size: 20px;
@@ -79,7 +100,7 @@ h1{
 }
 .page2{
     display:none;
-    /* margin: 4% auto; */
+    margin: none;
 }
 .page1-container{
     /* height: 100vh; */
@@ -182,5 +203,29 @@ hr{
     body {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 480px){
+    .contain{
+        /* margin-top: 6.5%;
+        margin-bottom: 6.5%; */
+        margin-left: 2.5%;
+        margin-right: 0%;
+    }
+    h1{
+        font-size:40px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 480px){
+    html{
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 480px){
+    .page2{
+        margin: none;
+        position: fixed;
+        transform: scale(1);
     }
 }
