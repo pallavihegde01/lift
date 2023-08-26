@@ -161,9 +161,9 @@ hr{
 .lift{
     width: 50px;
     height: 75px;
-    margin-left: 120px;
+    margin-left: 12px;
     border: 2px solid black;
-    margin-right: 5px;
+    margin-right: 70px;
     transition-property:transform;
     background-color:#393e41
     ;
