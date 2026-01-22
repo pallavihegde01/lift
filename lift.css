@@ -76,8 +76,8 @@ h1{
     background-position-y:115px;
 } */
 .contain{
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 .backtopage1{
     font-size: 20px;
@@ -107,9 +107,11 @@ h1{
     transition: var(--base-transition);
 }
 .apart{
-    margin:50px;
-    width: auto;
-    height: auto;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: min-content;
+    height:min-content;
     background-color:#757575;
     border: 2px solid black;
     box-shadow: 20px 20px 20px 20px black
@@ -217,15 +219,21 @@ hr{
         padding: 5px;
     }
 }
-@media only screen and (max-width: 480px){
+/* @media only screen and (max-width: 480px){
     html{
         transform: scale(1);
     }
-}
-@media only screen and (max-width: 480px){
+} */
+/* @media only screen and (max-width: 480px){
     .page2{
         margin: none;
-        position: fixed;
         transform: scale(1);
+    }
+} */
+@media only screen and (max-width:980px) {
+    .apart{
+        height: max-content;
+        width: max-content;
+        transform: scale(80%);
     }
 }
